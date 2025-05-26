@@ -1,34 +1,35 @@
-// Recipe collection with tags
-const recipes = [
-  {
-    file: "spaghetti-carbonara.html",
-    name: "Spaghetti Carbonara",
-    tags: ["italian", "pasta", "quick", "comfort"],
-  },
-  {
-    file: "chocolate-chip-cookies.html",
-    name: "Chocolate Chip Cookies",
-    tags: ["dessert", "sweet", "baking", "family"],
-  },
-  {
-    file: "chicken-stir-fry.html",
-    name: "Chicken Stir Fry",
-    tags: ["asian", "healthy", "quick", "vegetables"],
-  },
-  {
-    file: "banana-bread.html",
-    name: "Banana Bread",
-    tags: ["breakfast", "baking", "sweet", "comfort"],
-  },
-  {
-    file: "beef-tacos.html",
-    name: "Beef Tacos",
-    tags: ["mexican", "spicy", "dinner", "family"],
-  },
-  // Add more recipes with their tags
-];
+// Recipe collection - will be loaded from CSV
+let recipes = [];
+let filteredRecipes = [];
 
-let filteredRecipes = [...recipes];
+// Load recipes from CSV file
+async function loadRecipes() {
+  try {
+    const response = await fetch("recipe_data.csv");
+    const csvText = await response.text();
+
+    // Parse CSV using Papa Parse
+    const results = Papa.parse(csvText, {
+      header: true,
+      skipEmptyLines: true,
+      transformHeader: (header) => header.trim(),
+    });
+
+    // Transform the data to match our format
+    recipes = results.data.map((row) => ({
+      file: row.file,
+      name: row.name,
+      tags: row.tags.split(",").map((tag) => tag.trim()),
+    }));
+
+    filteredRecipes = [...recipes];
+    updateRecipeCount();
+    console.log("Recipes loaded:", recipes.length);
+  } catch (error) {
+    console.error("Error loading recipes:", error);
+    alert("Failed to load recipe data");
+  }
+}
 
 function getRandomRecipe() {
   if (filteredRecipes.length === 0) {
@@ -55,7 +56,10 @@ function updateActiveFilter(activeTag) {
   document.querySelectorAll(".tag-filter").forEach((btn) => {
     btn.classList.remove("active");
   });
-  document.querySelector(`[data-tag="${activeTag}"]`).classList.add("active");
+  const activeButton = document.querySelector(`[data-tag="${activeTag}"]`);
+  if (activeButton) {
+    activeButton.classList.add("active");
+  }
 }
 
 function updateRecipeCount() {
@@ -69,6 +73,6 @@ function updateRecipeCount() {
 }
 
 // Initialize on page load
-document.addEventListener("DOMContentLoaded", function () {
-  updateRecipeCount();
+document.addEventListener("DOMContentLoaded", async function () {
+  await loadRecipes();
 });

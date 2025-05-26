@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Recipe Collection</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="recipe-page">
+    <div class="container">
+      <header>
+        <h1>My Recipe Collection</h1>
+        <p class="subtitle">Discover delicious recipes at random</p>
+      </header>
+
+      <div class="main-content">
+        <p style="margin-bottom: 20px; font-size: 1.1em; color: #7f8c8d">
+          Ready to try something new? Filter by tags or click the button below
+          to get a random recipe from my collection!
+        </p>
+
+        <div class="tag-filters">
+          <h3>Filter by Category</h3>
+          <button
+            class="tag-filter active"
+            data-tag="all"
+            onclick="filterByTag('all')"
+          >
+            All Recipes
+          </button>
+          <button
+            class="tag-filter"
+            data-tag="quick"
+            onclick="filterByTag('quick')"
+          >
+            Quick & Easy
+          </button>
+          <button
+            class="tag-filter"
+            data-tag="vegetarian"
+            onclick="filterByTag('vegetarian')"
+          >
+            Vegetarian
+          </button>
+          <button
+            class="tag-filter"
+            data-tag="dessert"
+            onclick="filterByTag('dessert')"
+          >
+            Desserts
+          </button>
+          <button
+            class="tag-filter"
+            data-tag="healthy"
+            onclick="filterByTag('healthy')"
+          >
+            Healthy
+          </button>
+          <button
+            class="tag-filter"
+            data-tag="comfort"
+            onclick="filterByTag('comfort')"
+          >
+            Comfort Food
+          </button>
+          <button
+            class="tag-filter"
+            data-tag="italian"
+            onclick="filterByTag('italian')"
+          >
+            Italian
+          </button>
+          <button
+            class="tag-filter"
+            data-tag="asian"
+            onclick="filterByTag('asian')"
+          >
+            Asian
+          </button>
+          <button
+            class="tag-filter"
+            data-tag="mexican"
+            onclick="filterByTag('mexican')"
+          >
+            Mexican
+          </button>
+          <button
+            class="tag-filter"
+            data-tag="baking"
+            onclick="filterByTag('baking')"
+          >
+            Baking
+          </button>
+        </div>
+
+        <p class="recipe-count" id="recipe-count">5 recipes available</p>
+
+        <button class="random-btn" onclick="getRandomRecipe()">
+          🎲 Get Random Recipe
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

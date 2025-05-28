@@ -1,36 +1,36 @@
 file;name;tags
-spaghetti_pesto_kylling.html;Spaghetti Pesto Kylling;
+spaghetti_pesto_kylling.html;Spaghetti Pesto Kylling;koed
 "risengroed.html	";Risengroed ;vinter
 pandekager.html;Pandekager;kompliceret
 cholo_masala.html;Cholo Masala;
 fyldt_pasta_tomat.html;Fyldt Pasta Med Tomtsovs;
-butter_chicken.html;Butter Chicken ;
+butter_chicken.html;Butter Chicken ;koed
 wraps_hummus.html;Wraps med Hummus;
-hjemmelavet_pizza.html;Hjemmelavet Pizza;kompliceret
-fryselasagne.html;Fryselasagne med ærter;junk
-frysepizza.html;Frysepizza med ærter;junk
+hjemmelavet_pizza.html;Hjemmelavet Pizza;kompliceret, koed
+fryselasagne.html;Fryselasagne med ærter;junk, koed
+frysepizza.html;Frysepizza med ærter;junk, koed
 pokebowl.html;Pokebowl med falafel;
 roed_karry_kartoffel_ris.html;Rød karryblanding med kartofler og ris;kompliceret
 svensk_vege_poelseret.html;"""Svensk pølseret"" med grillost";
 linsegryde_peberfrugt.html;Linsegryde med kokosmælk og peberfrugt;kompliceret
-tarteletter.html;Tarteletter med fyld;
+tarteletter.html;Tarteletter med fyld;koed
 pastasalat_simpel.htlm;Pastasalat med syltede hvidløg/jalapenos;
 gnocchi_aertesovs.html;Gnocchi med ærtesovs;kompliceret
-nuddler_kylling.html;Nudler med kylling og grøntsagsblanding;
-fiskefillet_kartofler.html;Fiskefilet med kartofler;
-rugbroedsmad.html;Rugbrødsmadder med fisk, postej;
+nuddler_kylling.html;Nudler med kylling og grøntsagsblanding;koed
+fiskefillet_kartofler.html;Fiskefilet med kartofler;koed
+rugbroedsmad.html;Rugbrødsmadder med fisk, postej;koed
 gnocchi_tomatsovs.html;Gnocchi i tomatsovs;
 hjemmelavet_lasagne.html;Hjemmelavet Lasagne;
 blaabaer_risotto.html;Blåbær risotto med skimmelost;
-kyllingekoedboller_haydari.html;Kyllingekødboller og haydari i fladbrød;kompliceret
-kyllingeburger.html;Kyllingeburger ;
-hotdogs.html;Hotdogs;
-grillmad.html;Grillpølser, kartoffelsalat og hvidløgsbrød;
+kyllingekoedboller_haydari.html;Kyllingekødboller og haydari i fladbrød;kompliceret, koed
+kyllingeburger.html;Kyllingeburger ;koed
+hotdogs.html;Hotdogs;koed
+grillmad.html;Grillpølser, kartoffelsalat og hvidløgsbrød;koed, sommer
 risotto_champignon.html;Risotto med champignon;
 kartoffel_suppe.html;Kartoffelsuppe med løg og gulerødder;kompliceret, vinter
-barbequekylling_ris.html;Barbequemarineret kylling med ris;
-karbonade_ris.html;Karbonader med ris;
-laksepasta_kappers.html;Laks med pasta og kappers;kompliceret
+barbequekylling_ris.html;Barbequemarineret kylling med ris;koed
+karbonade_ris.html;Karbonader med ris;koed
+laksepasta_kappers.html;Laks med pasta og kappers;kompliceret, koed
 salad_nicoise.html;Salad nicoise;kompliceret
 pasta_koedsovs.html;"Pasta med vegetar ""kødsovs""";
 chili_sin_carne.html;"Chili sin carne med vegetar ""oksekød""";vinter

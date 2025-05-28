@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Recipe Collections</title>
+    <title>Min Opskriftssamling</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <script src="main.js"></script>
@@ -11,94 +11,94 @@
   <body class="recipe-page">
     <div class="container">
       <header>
-        <h1>My Recipe Collection</h1>
-        <p class="subtitle">Discover delicious recipes at random</p>
+        <h1>Min Opskriftssamling</h1>
+        <p class="subtitle">Opdag lækre opskrifter tilfældigt</p>
       </header>
 
       <div class="main-content">
         <p style="margin-bottom: 20px; font-size: 1.1em; color: #7f8c8d">
-          Ready to try something new? Filter by tags or click the button below
-          to get a random recipe from my collection!
+          Klar til at prøve noget nyt? Filtrer efter kategori eller klik på
+          knappen nedenfor for at få en tilfældig opskrift fra min samling!
         </p>
 
         <div class="tag-filters">
-          <h3>Filter by Category</h3>
+          <h3>Filtrér efter kategori</h3>
           <button
             class="tag-filter active"
             data-tag="all"
             onclick="filterByTag('all')"
           >
-            All Recipes
+            Alle Opskrifter
           </button>
           <button
             class="tag-filter"
             data-tag="quick"
             onclick="filterByTag('quick')"
           >
-            Quick & Easy
+            Hurtigt & Nem
           </button>
           <button
             class="tag-filter"
             data-tag="vegetarian"
             onclick="filterByTag('vegetarian')"
           >
-            Vegetarian
+            Vegetarisk
           </button>
           <button
             class="tag-filter"
             data-tag="dessert"
             onclick="filterByTag('dessert')"
           >
-            Desserts
+            Desserter
           </button>
           <button
             class="tag-filter"
             data-tag="healthy"
             onclick="filterByTag('healthy')"
           >
-            Healthy
+            Sundt
           </button>
           <button
             class="tag-filter"
             data-tag="comfort"
             onclick="filterByTag('comfort')"
           >
-            Comfort Food
+            Komfortmad
           </button>
           <button
             class="tag-filter"
             data-tag="italian"
             onclick="filterByTag('italian')"
           >
-            Italian
+            Italiensk
           </button>
           <button
             class="tag-filter"
             data-tag="asian"
             onclick="filterByTag('asian')"
           >
-            Asian
+            Asiatisk
           </button>
           <button
             class="tag-filter"
             data-tag="mexican"
             onclick="filterByTag('mexican')"
           >
-            Mexican
+            Mexicansk
           </button>
           <button
             class="tag-filter"
             data-tag="baking"
             onclick="filterByTag('baking')"
           >
-            Baking
+            Bagning
           </button>
         </div>
 
-        <p class="recipe-count" id="recipe-count">5 recipes available</p>
+        <p class="recipe-count" id="recipe-count">5 opskrifter tilgængelige</p>
 
         <button class="random-btn" onclick="getRandomRecipe()">
-          🎲 Get Random Recipe
+          🎲 Få en tilfældig opskrift
         </button>
       </div>
     </div>

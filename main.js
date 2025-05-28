@@ -17,7 +17,7 @@ async function loadRecipes() {
 
     // Transform the data to match our format
     recipes = results.data.map((row) => ({
-      file: row.file,
+      file: `opskriftsamling/${row.file}`, // prepend folder name,
       name: row.name,
       tags: row.tags.split(",").map((tag) => tag.trim()),
     }));
